@@ -27,3 +27,5 @@ public/video
 /src/styles/themes/green.scss
 /src/styles/themes/dark.scss
 
+package-lock.json
+tests/**/coverage/
