@@ -1,3 +1,10 @@
+<!--
+ * @Author: Drswith
+ * @Date: 2020-11-11 02:22:16
+ * @LastEditors: Drswith
+ * @LastEditTime: 2020-11-11 03:05:03
+ * @FilePath: \tusk-dashboard\src\components\SvgIcon\index.vue
+-->
 <template>
   <div v-if="isExternal" :style="styleExternalIcon" class="svg-external-icon svg-icon" v-on="$listeners" />
   <svg v-else :class="svgClass" aria-hidden="true" v-on="$listeners">

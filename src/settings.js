@@ -1,14 +1,24 @@
 /*
- * @Author: your name
- * @Date: 2020-11-10 03:48:35
- * @LastEditTime: 2020-11-10 07:11:22
- * @LastEditors: your name
- * @Description: In User Settings Edit
- * @FilePath: \vue-admin-template\src\settings.js
+ * @Author: Drswith
+ * @Date: 2020-11-11 02:22:16
+ * @LastEditors: Drswith
+ * @LastEditTime: 2020-11-11 02:24:01
+ * @FilePath: \tusk-dashboard\src\settings.js
  */
 module.exports = {
+  title: 'Vue Element Admin',
 
-  title: 'Vue Admin Template',
+  /**
+   * @type {boolean} true | false
+   * @description Whether show the settings right-panel
+   */
+  showSettings: true,
+
+  /**
+   * @type {boolean} true | false
+   * @description Whether need tagsView
+   */
+  tagsView: true,
 
   /**
    * @type {boolean} true | false
@@ -20,5 +30,13 @@ module.exports = {
    * @type {boolean} true | false
    * @description Whether show the logo in sidebar
    */
-  sidebarLogo: true
+  sidebarLogo: true,
+
+  /**
+   * @type {string | array} 'production' | ['production', 'development']
+   * @description Need show err logs component.
+   * The default is only used in the production env
+   * If you want to also use it in dev, you can pass ['production', 'development']
+   */
+  errorLog: 'production'
 }

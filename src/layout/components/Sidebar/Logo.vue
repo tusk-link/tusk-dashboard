@@ -1,10 +1,9 @@
 <!--
- * @Author: your name
- * @Date: 2020-11-10 03:48:35
- * @LastEditTime: 2020-11-10 07:12:51
- * @LastEditors: your name
- * @Description: In User Settings Edit
- * @FilePath: \vue-admin-template\src\layout\components\Sidebar\Logo.vue
+ * @Author: Drswith
+ * @Date: 2020-11-11 02:22:16
+ * @LastEditors: Drswith
+ * @LastEditTime: 2020-11-11 02:26:06
+ * @FilePath: \tusk-dashboard\src\layout\components\Sidebar\Logo.vue
 -->
 <template>
   <div class="sidebar-logo-container" :class="{'collapse':collapse}">
@@ -32,14 +31,15 @@ export default {
   },
   data() {
     return {
-      title: 'Vue Admin Template',
-      logo: 'https://wpimg.wallstcn.com/69a1c46c-eb1c-4b46-8bd4-e9e686ef5251.png'
+      title: 'TUSK',
+      logo: require('@/assets/logo.png')
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@import '@/styles/index.scss';
 .sidebarLogoFade-enter-active {
   transition: opacity 1.5s;
 }
@@ -52,9 +52,9 @@ export default {
 .sidebar-logo-container {
   position: relative;
   width: 100%;
-  height: 50px;
-  line-height: 50px;
-  background: #304156;
+  height: 120px;
+  line-height: 120px;
+  background: $menuBg;
   text-align: center;
   overflow: hidden;
 
@@ -63,8 +63,8 @@ export default {
     width: 100%;
 
     & .sidebar-logo {
-      width: 32px;
-      height: 32px;
+      width: 60px;
+      height: 60px;
       vertical-align: middle;
       margin-right: 12px;
     }
