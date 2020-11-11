@@ -46,9 +46,6 @@ export default {
     },
     routes() {
       return this.$store.state.permission.routes
-    },
-    theme() {
-      return this.$store.state.settings.theme
     }
   },
   watch: {

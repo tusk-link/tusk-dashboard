@@ -2,14 +2,14 @@
  * @Author: Drswith
  * @Date: 2020-11-11 02:22:16
  * @LastEditors: Drswith
- * @LastEditTime: 2020-11-11 02:26:06
+ * @LastEditTime: 2020-11-11 05:00:45
  * @FilePath: \tusk-dashboard\src\layout\components\Sidebar\Logo.vue
 -->
 <template>
   <div class="sidebar-logo-container" :class="{'collapse':collapse}">
     <transition name="sidebarLogoFade">
       <router-link v-if="collapse" key="collapse" class="sidebar-logo-link" to="/">
-        <img v-if="logo" :src="logo" class="sidebar-logo">
+        <img v-if="logo" :src="logo" class="sidebar-logo-hide">
         <h1 v-else class="sidebar-title">{{ title }} </h1>
       </router-link>
       <router-link v-else key="expand" class="sidebar-logo-link" to="/">
@@ -52,8 +52,8 @@ export default {
 .sidebar-logo-container {
   position: relative;
   width: 100%;
-  height: 120px;
-  line-height: 120px;
+  height: $sideBarLogoContainerHeight;
+  line-height: $sideBarLogoContainerLineHeight;
   background: $menuBg;
   text-align: center;
   overflow: hidden;
@@ -63,10 +63,16 @@ export default {
     width: 100%;
 
     & .sidebar-logo {
-      width: 60px;
-      height: 60px;
+      width: $sideBarLogoHeight;
+      height: $sideBarLogoWidth;
       vertical-align: middle;
       margin-right: 12px;
+    }
+
+    & .sidebar-logo-hide {
+      width: $sideBarLogoHeight - 10px;
+      height: $sideBarLogoWidth - 10px;
+      vertical-align: middle;
     }
 
     & .sidebar-title {
