@@ -9,6 +9,8 @@ $tiffany: #4AB7BD;
 $yellow:#FEC171;
 $panGreen: #30B08F;
 
+$generalRadius:20px;
+
 // sidebar
 $menuText:#ffffff;
 $menuHoverText: $menuText;
@@ -17,6 +19,8 @@ $subMenuActiveText:$menuText; // https://github.com/ElemeFE/element/issues/12951
 
 $menuBg: #31383f;
 $menuHover: #414d58;
+// $menuBg: #333339;
+// $menuHover: #515157;
 $menuActive: $--color-primary;
 
 $subMenuBg: $menuBg;

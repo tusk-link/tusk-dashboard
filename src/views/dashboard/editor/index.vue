@@ -1,11 +1,13 @@
+<!--
+ * @Author: Drswith
+ * @Date: 2020-11-11 02:22:16
+ * @LastEditors: Drswith
+ * @LastEditTime: 2020-11-11 20:08:59
+ * @FilePath: \tusk-dashboard\src\views\dashboard\editor\index.vue
+-->
 <template>
   <div class="dashboard-editor-container">
     <div class=" clearfix">
-      <pan-thumb :image="avatar" style="float: left">
-        Your roles:
-        <span v-for="item in roles" :key="item" class="pan-info-roles">{{ item }}</span>
-      </pan-thumb>
-      <github-corner style="position: absolute; top: 0px; border: 0; right: 0;" />
       <div class="info-container">
         <span class="display_name">{{ name }}</span>
         <span style="font-size:20px;padding-top:20px;display:inline-block;">Editor's Dashboard</span>
@@ -19,12 +21,10 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import PanThumb from '@/components/PanThumb'
-import GithubCorner from '@/components/GithubCorner'
 
 export default {
   name: 'DashboardEditor',
-  components: { PanThumb, GithubCorner },
+  components: { },
   data() {
     return {
       emptyGif: 'https://wpimg.wallstcn.com/0e03b7da-db9e-4819-ba10-9016ddfdaed3'
